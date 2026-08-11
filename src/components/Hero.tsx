@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="w-full lg:w-1/2 mt-12 lg:mt-0 relative h-[400px] lg:h-[70vh]">
             <div className="absolute inset-0 lg:-mr-8 overflow-hidden rounded-lg lg:rounded-none lg:rounded-bl-[100px]">
               <Image 
-                src="/imagens/baja1.webp" 
+                src="/imagens/foto-irina-tarot-portada3.webp" 
                 alt="Irina Cuesta realizando leitura de Tarot"
                 fill
                 className="object-cover object-center"
