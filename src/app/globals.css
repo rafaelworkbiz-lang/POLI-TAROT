@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-obsidian: #0A0A0C;
+  --color-deep-amethyst: #1A1124;
+  --color-champagne-gold: #E5C07B;
+  --color-muted-gold: #9D8C6D;
+  --color-starlight-white: #F4F4F5;
+  --color-gold-dark: #C5A059;
+
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-playfair);
+  
+  --color-background: #ffffff;
+  --color-foreground: #1A1124;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1A1124;
+}
+
+body {
+  @apply bg-white text-[#1A1124];
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+
+@utility transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+@utility backface-hidden {
+  backface-visibility: hidden;
+}
