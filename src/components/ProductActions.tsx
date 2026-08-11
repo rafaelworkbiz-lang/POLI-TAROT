@@ -2,7 +2,7 @@
 
 import { useCart } from '@/contexts/CartContext';
 import { useRouter } from 'next/navigation';
-import { Product } from '@/data/products';
+import { Product } from '@/components/ProductGrid';
 
 export default function ProductActions({ product }: { product: Product }) {
   const { addToCart } = useCart();
