@@ -16,7 +16,7 @@ export default function FloatingWhatsApp() {
       </div>
       
       <a 
-        href="https://wa.me/21967114250" 
+        href="https://wa.me/5515981816979" 
         target="_blank" 
         rel="noopener noreferrer"
         className="group relative flex items-center justify-center w-14 h-14 bg-gradient-to-tr from-[#25D366] to-[#128C7E] rounded-full shadow-[0_0_20px_rgba(37,211,102,0.3)] hover:scale-110 transition-transform duration-300"
