@@ -3,6 +3,7 @@ import RitualesSection from "@/components/RitualesSection";
 import SocialProof from "@/components/SocialProof";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import FooterBanner from "@/components/FooterBanner";
+import WhatsAppCommunity from "@/components/WhatsAppCommunity";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <RitualesSection />
       <SocialProof />
+      <WhatsAppCommunity />
       <FooterBanner />
       <FloatingWhatsApp />
     </main>
