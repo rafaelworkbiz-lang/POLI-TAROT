@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Irina Tarot Store & Instituto de Conciencia",
+  title: "Poli Sobral Tarot Store & Instituto de Conciencia",
   description: "Conexión auténtica y transformadora con tus seres queridos desde el otro plano.",
 };
 
@@ -29,8 +29,8 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "name": "Irina Tarot Store & Instituto de Conciencia",
-        "image": "https://example.com/irina-photo.jpg",
+        "name": "Poli Sobral Tarot Store & Instituto de Conciencia",
+        "image": "https://example.com/Poli Sobral-photo.jpg",
         "description": "Lecturas de Tarot, Rituales y Cursos de Autoconocimiento.",
         "address": {
           "@type": "PostalAddress",
@@ -83,3 +83,4 @@ export default function RootLayout({
     </html>
   );
 }
+

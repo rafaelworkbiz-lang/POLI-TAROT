@@ -14,7 +14,7 @@ export default function Hero() {
           {/* Coluna de Texto */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left z-10 lg:pr-12">
             <span className="text-gold-dark font-semibold tracking-wider uppercase text-sm mb-4">
-              Nova Coleção & Lecturas
+              Consultas & Jogo de Búzios
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#1A1124] leading-tight mb-6">
               {t('hero.title')}
@@ -23,10 +23,10 @@ export default function Hero() {
               {t('hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link href="/lecturas" className="bg-[#1A1124] hover:bg-black text-white px-8 py-4 rounded-sm font-medium transition-colors duration-300 w-full sm:w-auto text-center uppercase tracking-widest text-sm">
+              <Link href="/whatsapp" className="bg-[#1A1124] hover:bg-black text-white px-8 py-4 rounded-sm font-medium transition-colors duration-300 w-full sm:w-auto text-center uppercase tracking-widest text-sm">
                 {t('hero.ctaPrimary')}
               </Link>
-              <Link href="/instituto" className="border border-[#1A1124] text-[#1A1124] hover:bg-gray-50 px-8 py-4 rounded-sm font-medium transition-colors duration-300 w-full sm:w-auto text-center uppercase tracking-widest text-sm">
+              <Link href="/whatsapp" className="border border-[#1A1124] text-[#1A1124] hover:bg-gray-50 px-8 py-4 rounded-sm font-medium transition-colors duration-300 w-full sm:w-auto text-center uppercase tracking-widest text-sm">
                 {t('hero.ctaSecondary')}
               </Link>
             </div>
@@ -36,8 +36,8 @@ export default function Hero() {
           <div className="w-full lg:w-1/2 mt-12 lg:mt-0 relative h-[400px] lg:h-[70vh]">
             <div className="absolute inset-0 lg:-mr-8 overflow-hidden rounded-lg lg:rounded-none lg:rounded-bl-[100px]">
               <Image 
-                src="/imagens/foto-irina-tarot-portada3.webp" 
-                alt="Irina Cuesta realizando leitura de Tarot"
+                src="/imagens/poli-sobral-hero.jpg" 
+                alt="Poli Sobral realizando leitura de Tarot"
                 fill
                 className="object-cover object-center"
                 priority
@@ -49,3 +49,4 @@ export default function Hero() {
     </section>
   );
 }
+

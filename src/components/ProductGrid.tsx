@@ -21,7 +21,7 @@ export default function ProductGrid({ products }: ProductGridProps) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
       {products.map((product) => (
-        <div key={product.id} className="group relative flex flex-col cursor-pointer">
+        <a key={product.id} href={product.href} className="group relative flex flex-col cursor-pointer">
           {/* Image Container */}
           <div className="relative w-full aspect-[3/4] mb-4 bg-gray-100 overflow-hidden">
             <Image
@@ -54,7 +54,7 @@ export default function ProductGrid({ products }: ProductGridProps) {
             </p>
           </div>
 
-        </div>
+        </a>
       ))}
     </div>
   );

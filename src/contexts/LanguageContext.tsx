@@ -1,42 +1,25 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { es } from '@/i18n/dictionaries/es';
-import { en } from '@/i18n/dictionaries/en';
+import { pt } from '@/i18n/dictionaries/pt';
 
-type Language = 'es' | 'en';
-type Dictionary = typeof es;
+type Language = 'pt';
+type Dictionary = typeof pt;
 
 interface LanguageContextProps {
   language: Language;
-  setLanguage: (lang: Language) => void;
   t: (key: string) => string;
 }
 
 const dictionaries = {
-  es,
-  en
+  pt
 };
 
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguageState] = useState<Language>('es');
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    const savedLang = localStorage.getItem('language') as Language;
-    if (savedLang && ['es', 'en'].includes(savedLang)) {
-      setLanguageState(savedLang);
-    }
-    setMounted(true);
-  }, []);
-
-  const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
-    localStorage.setItem('language', lang);
-  };
-
+  const language: Language = 'pt';
+  
   const t = (path: string): string => {
     const keys = path.split('.');
     let current: any = dictionaries[language];
@@ -44,13 +27,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
     for (const key of keys) {
       if (current[key] === undefined) {
         console.warn(`Translation key not found: ${path}`);
-        // Fallback to ES if missing
-        let fallback: any = dictionaries['es'];
-        for (const k of keys) {
-          if (fallback[k] === undefined) return path;
-          fallback = fallback[k];
-        }
-        return fallback;
+        return path;
       }
       current = current[key];
     }
@@ -59,7 +36,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, t }}>
       {children}
     </LanguageContext.Provider>
   );

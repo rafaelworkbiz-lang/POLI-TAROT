@@ -6,15 +6,15 @@ export default function FooterBanner() {
   return (
     <footer className="w-full bg-[#1A1A24] text-white py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
-        <h2 className="text-2xl md:text-3xl font-bold tracking-wide mb-4">RESERVA YA MISMO</h2>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-wide mb-4">AGENDE SUA CONSULTA</h2>
         <p className="text-sm md:text-base text-gray-400 mb-12 text-center">
-          Accede a rituales exclusivos, promociones especiales y tips mágicos
+          Descubra os caminhos e energias com os Jogos de Búzios
         </p>
 
         <div className="w-full flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-8 mb-8 gap-6 md:gap-0">
-          <button className="bg-[#5A31F4] hover:bg-[#4a26d1] text-white px-6 py-2 rounded-full font-medium transition-colors flex items-center gap-2 text-sm">
-            <span>♡</span> Seguir en shop
-          </button>
+          <Link href="/whatsapp" className="bg-[#5A31F4] hover:bg-[#4a26d1] text-white px-6 py-2 rounded-full font-medium transition-colors flex items-center gap-2 text-sm">
+            <span>♡</span> Agendar pelo WhatsApp
+          </Link>
           
           <div className="flex items-center gap-6 text-gray-400">
             <Link href="#" className="hover:text-white transition-colors" aria-label="Facebook">
@@ -35,13 +35,13 @@ export default function FooterBanner() {
 
         <div className="w-full flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-6 md:gap-0">
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
-            <span>© 2026, Irina Tarot store</span>
+            <span>© 2026, Poli Sobral Tarot</span>
             <span>·</span>
-            <Link href="#" className="hover:text-gray-300">Política de privacidad</Link>
+            <Link href="#" className="hover:text-gray-300">Política de Privacidade</Link>
             <span>·</span>
-            <Link href="#" className="hover:text-gray-300">Términos del servicio</Link>
+            <Link href="#" className="hover:text-gray-300">Termos de Serviço</Link>
             <span>·</span>
-            <Link href="#" className="hover:text-gray-300">Información de contacto</Link>
+            <Link href="/whatsapp" className="hover:text-gray-300">Contato</Link>
           </div>
           
           {/* Payment Methods */}
@@ -73,3 +73,4 @@ export default function FooterBanner() {
     </footer>
   );
 }
+

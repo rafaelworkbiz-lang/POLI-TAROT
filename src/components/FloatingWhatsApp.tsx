@@ -12,13 +12,11 @@ export default function FloatingWhatsApp() {
       transition={{ delay: 2, duration: 0.8, type: "spring" }}
     >
       <div className="bg-white border border-gray-200 text-[#1A1124] text-xs px-4 py-2 rounded-t-xl rounded-bl-xl rounded-br-sm shadow-md opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-        ¿Tienes dudas? ¡Hablemos!
+        Tem dúvidas? Me chame!
       </div>
       
       <a 
-        href="https://wa.me/5515981816979" 
-        target="_blank" 
-        rel="noopener noreferrer"
+        href="/whatsapp" 
         className="group relative flex items-center justify-center w-14 h-14 bg-gradient-to-tr from-[#25D366] to-[#128C7E] rounded-full shadow-[0_0_20px_rgba(37,211,102,0.3)] hover:scale-110 transition-transform duration-300"
       >
         <MessageCircle className="text-white w-7 h-7" />

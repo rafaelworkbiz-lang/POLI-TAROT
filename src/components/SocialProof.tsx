@@ -20,10 +20,10 @@ export default function SocialProof() {
           >
             <Quote className="absolute -left-[20px] top-0 text-gold-dark/40 w-10 h-10 bg-white rounded-full p-1 border border-gray-100 shadow-sm" />
             <p className="font-serif italic text-xl md:text-2xl text-[#1A1124] leading-relaxed mb-4">
-              "Una experiencia que dividió mi vida en un antes y un después. La precisión de Irina no tiene comparación, vi mi realidad transformarse."
+              "Uma experiência que dividiu minha vida em um antes e um depois. A precisão do Jogo de Búzios não tem comparação, vi minha realidade se transformar."
             </p>
             <span className="text-gold-dark tracking-widest uppercase text-xs font-semibold">
-              — Camila R., Lectura de Destino
+              — Camila R., Consulta Espiritual
             </span>
           </motion.div>
 
@@ -36,10 +36,10 @@ export default function SocialProof() {
           >
             <Quote className="absolute -left-[20px] top-0 text-gold-dark/40 w-10 h-10 bg-white rounded-full p-1 border border-gray-100 shadow-sm" />
             <p className="font-serif italic text-lg md:text-xl text-[#1A1124]/80 leading-relaxed mb-4">
-              "El curso de autoconocimiento desbloqueó barreras que llevaba años intentando superar con métodos tradicionales."
+              "A leitura desbloqueou barreiras que eu levava anos tentando superar. Encontrei clareza e direção para o meu caminho."
             </p>
             <span className="text-gold-dark tracking-widest uppercase text-xs font-semibold">
-              — Javier M., Alumno
+              — Javier M., Jogo de Búzios
             </span>
           </motion.div>
         </div>
@@ -60,15 +60,15 @@ export default function SocialProof() {
             <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent z-10" />
             
             <Image 
-              src="/imagens/irina-perfil.webp" 
-              alt="Irina Cuesta" 
+              src="/imagens/poli-sobral-perfil.jpg" 
+              alt="Poli Sobral" 
               fill 
               className="object-cover object-top opacity-90 group-hover:scale-105 transition-transform duration-1000" 
             />
             
             <div className="relative z-20 text-center pb-8 w-full">
-              <h3 className="font-serif text-3xl text-[#1A1124] mb-1">Irina Cuesta</h3>
-              <p className="text-gold-dark uppercase tracking-widest text-xs font-semibold">Fundadora & Guía Espiritual</p>
+              <h3 className="font-serif text-3xl text-[#1A1124] mb-1">Poli Sobral</h3>
+              <p className="text-gold-dark uppercase tracking-widest text-xs font-semibold">Fundadora & Guia Espiritual</p>
             </div>
           </div>
         </motion.div>
@@ -77,3 +77,4 @@ export default function SocialProof() {
     </section>
   );
 }
+
